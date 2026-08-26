@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "checkJs": false,
+    "lib": ["ES2022", "DOM"]
+  },
+  "exclude": ["node_modules", "test-results"]
+}

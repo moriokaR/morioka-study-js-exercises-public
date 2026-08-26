@@ -7,7 +7,8 @@
     "test:browser": "playwright test",
     "server": "serve",
     "lint": "eslint . --max-warnings=0",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "format:watch": "chokidar \"**/*.{js,jsx,ts,tsx,json,md,html,css}\" -c \"prettier --write {path}\" --initial"
   },
   "author": "",
   "private": true,
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "@playwright/test": "^1.62.0",
+    "chokidar-cli": "^3.0.0",
     "eslint": "^8.51.0",
     "eslint-config-prettier": "^9.0.0",
     "prettier": "^3.0.3",

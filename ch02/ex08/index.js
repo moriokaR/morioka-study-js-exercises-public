@@ -9,8 +9,14 @@ console.log(a)`;
 
 const program2 = `let a; a = 3; console.log(a);`;
 
-const ast1 = acorn.parse(program1, { ecmaVersion: "latest", sourceType: "script" });
-const ast2 = acorn.parse(program2, { ecmaVersion: "latest", sourceType: "script" });
+const ast1 = acorn.parse(program1, {
+  ecmaVersion: "latest",
+  sourceType: "script",
+});
+const ast2 = acorn.parse(program2, {
+  ecmaVersion: "latest",
+  sourceType: "script",
+});
 
 console.log("=== program1 (セミコロン省略) のAST ===");
 console.log(JSON.stringify(ast1, null, 2));

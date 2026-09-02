@@ -27,4 +27,15 @@ export const fizzbuzz = () => {
 // 第2引数 (_, i) => i + 1 は、各要素を作るときに呼ばれる関数。
 // _ は元の要素の値(今回は使わないので無視)、i は0始まりのインデックス(0,1,2,...,99)。
 // インデックスに1を足すことで、結果的に [1, 2, 3, ..., 100] という配列になる。
-export const fizzbuzz = () => Array.from({ length: 100 }, (_, i) => i + 1).map(n => n % 3 == 0 && n % 5 == 0 ? "FizzBuzz\n" : n % 3 == 0 ? "Fizz\n" : n % 5 == 0 ? "Buzz\n" : n + "\n").join("");
+export const fizzbuzz = () =>
+  Array.from({ length: 100 }, (_, i) => i + 1)
+    .map((n) =>
+      n % 3 == 0 && n % 5 == 0
+        ? "FizzBuzz\n"
+        : n % 3 == 0
+        ? "Fizz\n"
+        : n % 5 == 0
+        ? "Buzz\n"
+        : n + "\n",
+    )
+    .join("");

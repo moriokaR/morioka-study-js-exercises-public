@@ -1,3 +1,4 @@
+```
 PS C:\Users\r23600343\source\repos\morioka-study-js-exercises-public> node ch03/ex01/index.js
 Infinity + Infinity = Infinity
 Infinity - Infinity = NaN
@@ -36,3 +37,4 @@ NaN - NaN = NaN
 NaN * NaN = NaN
 NaN / NaN = NaN
 PS C:\Users\r23600343\source\repos\morioka-study-js-exercises-public>
+```
